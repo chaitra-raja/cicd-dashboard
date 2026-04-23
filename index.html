@@ -3,22 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CI/CD Deployment Dashboard</title>
+<title>CI/CD Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero">
-<h1>CI/CD Deployment Dashboard</h1>
-<p>Automated build, Docker image creation and Kubernetes deployment.</p>
+
+<header>
+    <h1>CI/CD Deployment Dashboard</h1>
+    <p>Automated Build • Docker Image • Kubernetes Deployment</p>
 </header>
 
-<section class="cards">
-<div class="card">GitHub</div>
-<div class="card">Jenkins</div>
-<div class="card">Docker</div>
-<div class="card">Kubernetes</div>
-</section>
+<div class="container">
 
-<footer>Build Status: Successful</footer>
+    <div class="cards">
+        <div class="card">GitHub</div>
+        <div class="card">Jenkins</div>
+        <div class="card">Docker</div>
+        <div class="card">Kubernetes</div>
+    </div>
+
+    <div class="pipeline">
+        GitHub → Jenkins → Docker → Deploy
+    </div>
+
+    <div class="status">
+        Build Status: Successful ✅
+    </div>
+
+</div>
+
+<footer>
+    Developed for DevOps Mini Project
+</footer>
+
 </body>
 </html>
