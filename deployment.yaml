@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-dashboard
+  template:
+    metadata:
+      labels:
+        app: cicd-dashboard
+    spec:
+      containers:
+      - name: cicd-dashboard
+        image: cicd-dashboard
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
