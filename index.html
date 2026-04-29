@@ -4,58 +4,294 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Campus Internship Tracker</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
-<header class="hero">
-    <h1>Campus Internship Tracker</h1>
-    <p>Track latest opportunities, deadlines, and skills in demand</p>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar">
 
-<section class="cards">
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+Internship Tracker
+</div>
+
+<div class="navlinks">
+<a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+<a href="#companies"><i class="fa-solid fa-building"></i> Companies</a>
+<a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+<a href="#resources"><i class="fa-solid fa-book-open"></i> Resources</a>
+<a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<h1>Campus Internship Tracker</h1>
+
+<p>Track opportunities, skills, and career growth</p>
+
+<a href="#companies" class="hero-btn">
+Explore Opportunities
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</section>
+
+<!-- TOP INTERNSHIPS -->
+<section class="section">
+
+<h2>
+<i class="fa-solid fa-briefcase"></i>
+Top Internship Opportunities
+</h2>
+
+<p class="subtitle">
+Apply to top companies and kickstart your career
+</p>
+
+<div class="cards" id="companies">
 
 <div class="card">
-<h2>Google</h2>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+<h3>Google</h3>
 <p>Software Engineer Intern</p>
-<span>Apply Open</span>
+<a href="#">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 
 <div class="card">
-<h2>Amazon</h2>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+<h3>Amazon</h3>
 <p>ML Summer Intern</p>
-<span>Closing Soon</span>
+<a href="#">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 
 <div class="card">
-<h2>Microsoft</h2>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+<h3>Microsoft</h3>
 <p>Product Intern</p>
-<span>Open</span>
+<a href="#">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 
 <div class="card">
-<h2>Adobe</h2>
-<p>Frontend Developer Intern</p>
-<span>New Listing</span>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg">
+<h3>Adobe</h3>
+<p>Frontend Intern</p>
+<a href="#">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
 </div>
 
 </section>
 
-<section class="skills">
-<h2>Skills in Demand</h2>
+<!-- TOP HIRING COMPANIES -->
+<section class="section">
+
+<h2>
+<i class="fa-regular fa-star"></i>
+Top Hiring Companies
+</h2>
+
+<div class="mini-grid">
+
+<div class="mini-box">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+<span>Google</span>
+</div>
+
+<div class="mini-box">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+<span>Amazon</span>
+</div>
+
+<div class="mini-box">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+<span>Microsoft</span>
+</div>
+
+<div class="mini-box">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg">
+<span>Adobe</span>
+</div>
+
+<div class="mini-box">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg">
+<span>Infosys</span>
+</div>
+
+<div class="mini-box">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+<span>Accenture</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+
+<h2>
+<i class="fa-solid fa-bolt" style="color:#a855f7;"></i>
+Skills in Demand
+</h2>
+
 <div class="tags">
-<span>DSA</span>
-<span>Python</span>
-<span>Web Dev</span>
-<span>Machine Learning</span>
-<span>Cloud</span>
+
+<span><i class="fa-solid fa-code" style="color:#38bdf8;"></i> DSA</span>
+
+<span><i class="fa-brands fa-python" style="color:#facc15;"></i> Python</span>
+
+<span><i class="fa-solid fa-globe" style="color:#22d3ee;"></i> Web Development</span>
+
+<span><i class="fa-solid fa-cloud" style="color:#ffffff;"></i> Cloud Computing</span>
+
+<span><i class="fa-solid fa-microchip" style="color:#facc15;"></i> Machine Learning</span>
+
+<span><i class="fa-regular fa-message" style="color:#c084fc;"></i> Communication</span>
+
 </div>
+
 </section>
 
+
+<!-- RESOURCES -->
+<section class="section" id="resources">
+
+<h2>
+<i class="fa-solid fa-book-open" style="color:#8b5cf6;"></i>
+Student Resources
+</h2>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+<h3>
+<i class="fa-regular fa-file-lines" style="color:#22c55e;"></i>
+Resume Building
+</h3>
+<p>Create a professional resume that stands out.</p>
+<a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<div class="resource-card">
+<h3>
+<i class="fa-solid fa-user-graduate" style="color:#60a5fa;"></i>
+Interview Prep
+</h3>
+<p>Ace your interviews with these expert tips.</p>
+<a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<div class="resource-card">
+<h3>
+<i class="fa-brands fa-linkedin" style="color:#0a66c2;"></i>
+LinkedIn Tips
+</h3>
+<p>Optimise your LinkedIn profile and grow.</p>
+<a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<div class="resource-card">
+<h3>
+<i class="fa-brands fa-github" style="color:#ffffff;"></i>
+GitHub Portfolio
+</h3>
+<p>Build an impressive portfolio that showcases your skills.</p>
+<a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<div class="resource-card">
+<h3>
+<i class="fa-solid fa-brain" style="color:#f59e0b;"></i>
+Aptitude Practice
+</h3>
+<p>Practice aptitude questions and improve your speed.</p>
+<a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+
+<h2>
+<i class="fa-solid fa-phone" style="color:#a855f7;"></i>
+Contact Us
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+<h3>
+<i class="fa-regular fa-envelope" style="color:#c084fc;"></i>
+Email
+</h3>
+<p>support@interntracker.com</p>
+</div>
+
+<div class="contact-box">
+<h3>
+<i class="fa-solid fa-phone-volume" style="color:#84cc16;"></i>
+Phone
+</h3>
+<p>+91 98765 43210</p>
+</div>
+
+<div class="contact-box">
+<h3>
+<i class="fa-solid fa-location-dot" style="color:#f43f5e;"></i>
+Location
+</h3>
+<p>Bengaluru, India</p>
+</div>
+
+<div class="contact-box">
+<h3>Connect With Us</h3>
+<p style="font-size:24px;">
+
+<i class="fa-brands fa-linkedin" style="color:#0a66c2;"></i>
+
+&nbsp;&nbsp;
+
+<i class="fa-brands fa-github" style="color:#ffffff;"></i>
+
+&nbsp;&nbsp;
+
+<i class="fa-brands fa-instagram" style="color:#e1306c;"></i>
+
+&nbsp;&nbsp;
+
+<i class="fa-regular fa-envelope" style="color:#c084fc;"></i>
+
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
+
 Powered by Jenkins • Docker • Kubernetes
+
+<br><br>
+
+© 2026 Internship Tracker. All rights reserved.
+
 </footer>
 
 </body>
-</html>
 </html>
